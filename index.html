@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="icon" href="LOGO PNG.png">
+    
+        <!-- Importar Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+        <!-- Importar otras hojas de estilo -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-C1x9PLVrbxlwOzCE4DANu3CGa5OYfUbaCyBcP4rQ/iOJJbFrlkha5zYq8RUfXk02" crossorigin="anonymous">
+        
+        <!-- Importar tus estilos personalizados -->
+        <link rel="stylesheet" href="Estilos.css">
+        <link rel="stylesheet" href="output.css">
+    </head>
+<body>
+    <section class=" ">
+    
+        <nav class="bg-black shadow shadow-gray-300 w-full px-8 md:px-auto">
+    <div class="md:h-16 h-20 mx-auto md:px-4 container flex items-center justify-between">
+        <!-- Logo -->
+        <div class="text-white">
+            <!-- Heroicon - Chip Outline -->
+            <img src="LOGO PNG.png" alt="logo" class="h-8">
+        </div>
+        <!-- Contenedor de enlaces -->
+        <div class="hidden md:flex flex-grow justify-center">
+            <ul class="text-white flex font-semibold">
+                
+                <li class="md:px-4 md:py-2 hover:text-red-500"><a href="#NOSOTROS" onclick="smoothScroll('NOSOTROS')">Nosotros</a></li>
+                <li class="md:px-4 md:py-2 hover:text-red-500"><a href="#ACTIVIDADES">Actividades</a></li>
+                <li class="md:px-4 md:py-2 hover:text-red-500"><a href="#HORARIOS">Horarios</a></li>
+                <li class="md:px-4 md:py-2 hover:text-red-500"><a href="#CONTACTO">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Botón de hamburguesa (visible en mobile) -->
+        <div class="block md:hidden" id="toggleButton">
+            <button class="text-white hover:bg-red-500 rounded  focus:outline-none">
+                <svg class="h-10 w-10 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M4 6h16a1 1 0 010 2H4a1 1 0 110-2zm0 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 5h16a1 1 0 010 2H4a1 1 0 110-2z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+        <!-- Menú colapsable -->
+        <div class="md:hidden bg-red-500" id="menuColapsable">
+            <ul class="text-white flex flex-row justify-center">
+                <li class="py-2 px-4 border-b"><a href="#NOSOTROS" class="block" onclick="smoothScroll('NOSOTROS')">Nosotros</a></li>
+                <li class="py-2 px-4 border-b"><a href="#ACTIVIDADES" class="block">Actividades</a></li>
+                <li class="py-2 px-4 border-b"><a href="#HORARIOS" class="block">Horarios</a></li>
+                <li class="py-2 px-4"><a href="#CONTACTO" class="block">Contacto</a></li>
+            </ul>
+        </div>
+        </section>
+
+        
+
+<section class=" py-44 bg-cover bg-top bg-no-repeat bg-slate-900 bg-blend-multiply" style="background-image: url(handsome-shirtless-man-with-stylish-hair-muscular-ectomorph-body-doing-exercises-with-dumbbells-dark-textured-background.jpg); background-color: rgb(91, 92, 104); background-blend-mode: multiply;">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">ENTRENA DURO <span class=" text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-500">VIVE MAS FUERTE</span></h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <button class="transition duration-150 ease-in-out inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-white dark:focus:ring-blue-900">
+                ¡Empieza ahora!
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a></button>
+            <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                Mas información
+            </a>  
+        </div>
+    </div>
+</section>
+
+
+    <section class="py-28 bg-gray-200  flex flex-col lg:flex-row">
+        <div class="container md:w-1/2">
+            <img src="2.jpg" alt="Imagen" class="w-full h-auto md:h-full">
+        </div>
+        <div class="md:w-1/2  p-8 flex flex-col justify-center">
+            <h1 class="text-7xl sm:text-8xl font-bold text-left">Bienvenido a</h1>
+            <h1 class=" text-red-500 text-8xl font-bold text-left">FULLGYM</h1>
+            <p class="text-base sm:text-2xl mb-4 max-w-screen-xl text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="bottom-6">
+                <button class="button2 font-semibold" onclick="scrollToSection('HORARIOS')">Nuestros Horarios</button>
+            </div>
+        </div>
+    </section>
+    <section id="NOSOTROS" class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+            <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nuestro Equipo</h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+            </div> 
+            <div class="grid gap-8 lg:gap-16  lg:grid-cols-3">
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="Dwayne Johnson.jpg" alt="Roberto Avatar">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Roberto Battion</a>
+                    </h3>
+                    <p>Prof. Educación física</p>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png" alt="Helene Avatar">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Carla Gomez</a>
+                    </h3>
+                    <p>Prof. de Educación física</p>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="unnamed.jpg" alt="Jese Avatar">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Milagros Vallejos</a>
+                    </h3>
+                    <p>Prof. de BodyPump</p>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+               
+      </section>
+    </section>
+    <section id="ACTIVIDADES" class="bg-cover text-white-600 body-font" style="background-image: url(dark-concrete-texture-background.jpg);  background-color: rgb(91, 92, 104); background-blend-mode: multiply;">
+        <div class="container px-5 py-16 mx-auto">
+            <div class="text-center w-full mb-10">
+              <h2 class="text-3xl text-gray-50  font-medium  mb-4">Explora</h2>
+              <h1 class=" text-6xl font-bold title-font mb-4 text-red-500">NUESTRAS ACTIVIDADES</h1>
+            </div>
+            <div class="sm:grid-cols-2 md:flex flex-row lg:flex">
+                <div class=" transform  flex-1 md:w-1/2 p-4  transition duration-300 hover:scale-105  ">
+                  <div class="bg-gray-100 p-3 rounded-lg">
+                    <img class="h-50 rounded w-full object-cover object-center mb-6" src="gente-haciendo-ciclismo-indoor.jpg" alt="content">
+                    <h3 class="tracking-widest text-gray-500 text-xs font-medium ">Profesor:Roberto Battion</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">FUNCIONAL</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                  </div>
+                </div>
+                <div class=" transform  flex-1 md:w-1/2 p-4  transition duration-300 hover:scale-105">
+                  <div class="bg-gray-100 p-3 rounded-lg">
+                    <img class="h-50 rounded w-full object-cover object-center mb-6" src="equipo-femenino-que-ejercita-aerobicos-juntos-gimnasio.jpg" alt="content">
+                    <h3 class="tracking-widest text-gray-500 text-xs font-medium ">Profesor:Milagros Vallejos</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">BODY PUMP</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                  </div>
+                </div>
+                <div class="transform  flex-1 md:w-1/2 p-4  transition duration-300 hover:scale-105">
+                  <div class="bg-gray-100 p-3 rounded-lg">
+                    <img class="h-50 rounded w-full object-cover object-center mb-6" src="active-people-taking-part-zumba-class-together.jpg" alt="content">
+                    <h3 class="tracking-widest text-gray-500 text-xs font-medium ">Profesor:Carla Gomez</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">ZUMBA</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </section>
+    
+  <section id="HORARIOS" class="text-gray-600 body-font border-8">
+    <div class="container px-5 py-24 mx-auto ">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class=" text-6xl font-bold title-font mb-4 text-gray-900">NUESTROS <span class="text-red-500">HORARIOS</span></h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Descubre todas nuestras actividades que tenemos para ofrecerte.</p>
+        </div>
+        <div class=" overflow-x-auto">
+            <table class="table-auto border-separate border-8  border-gray-600 w-full">
+                <thead>
+                    <tr>
+                        <th class="text-gray-50 px-4 py-2 bg-red-500 border ">Día</th>
+                        <th class="text-gray-50 px-4 py-2 bg-red-500 border ">LUNES</th>
+                        <th class="text-gray-50 px-4 py-2 bg-red-500 border ">MARTES</th>
+                        <th class="text-gray-50 px-4 py-2 bg-red-500 border ">MIERCOLES</th>
+                        <th class="text-gray-50 px-4 py-2 bg-red-500 border ">JUEVES</th>
+                        <th class="text-gray-50 px-4 py-2 bg-red-500 border ">VIERNES</th>
+                        <th class="text-gray-50 px-4 py-2 bg-red-500 border ">SÁBADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-gray-50 px-4 py-2 text-center font-bold bg-red-500 border ">7:00 A 10:00</td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 text-center border "> <span class="font-bold block">ZUMBA</span>
+                            <span class="block">Carla Gomez</span></td>
+                        <td class="px-4 py-2 text-center border "><span class="font-bold block">FUNCIONAL</span>
+                            <span class="block">Roberto Battion</span></td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 text-center py-2 border "> <span class="font-bold block">BODY PUMP</span>
+                            <span class="block">Milagros Vallejos</span></td>
+                        <td class="px-4 py-2 border "></td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-50 px-4 py-2 text-center font-bold bg-red-500 ">11:00 A 13:00</td>
+                        <td class="px-4 py-2 border text-center "><span class="font-bold block">FUNCIONAL</span>
+                            <span class="block">Roberto Battion</span></td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 text-center border "><span class="font-bold block">FUNCIONAL</span>
+                            <span class="block">Roberto Battion</span></td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 border "></td>
+                    </tr>
+                    <tr>
+                        <td class=" text-gray-50 px-4 py-2 text-center font-bold bg-red-500   border ">14:00 A 16:00</td>
+                        <td class="px-4 py-2 border text-center "> <span class="font-bold block">BODY PUMP</span>
+                            <span class="block">Milagros Vallejos</span></td>
+                        <td class="px-4 py-2 border text-center "> <span class="font-bold block">BODY PUMP</span>
+                            <span class="block">Milagros Vallejos</span></td>
+                        <td class="px-4 py-2 border text-center "><span class="font-bold block">ZUMBA</span>
+                            <span class="block">Carla Gomez</span></td>
+                        <td class="px-4 py-2 border  "></td>
+                        <td class="px-4 py-2 border text-center "><span class="font-bold block">FUNCIONAL</span>
+                            <span class="block">Roberto Battion</span></td>
+                        <td class="px-4 py-2 text-center border "><span class="font-bold block">ZUMBA</span>
+                            <span class="block">Carla Gomez</span></td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-50 px-4 py-2 text-center font-bold bg-red-500 border ">18:00 A 21:00</td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 border text-center "> <span class="font-bold block">BODY PUMP</span>
+                            <span class="block">Milagros Vallejos</span></td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 border "></td>
+                        <td class="px-4 py-2 border "></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </section>
+
+  <section id="CONTACTO" class="bg-cover" style="background-image: url(dark-concrete-texture-background.jpg);  background-color: rgb(91, 92, 104); background-blend-mode: multiply;">
+    <div class="flex-row container  max-w-screen-xs mx-auto p-2">
+        <div class="lg:flex flex-row  md:grid-cols-12 ">
+            <div class="xl:flex-row md:col-span-4 p-10 text-white">
+               
+                <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
+                    ¡Es ahora! Ponte en <span class= " text-red-500">Contacto</span>
+                </h3>
+                <p class="mt-4 leading-7 text-gray-200">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.
+                </p>
+    
+                <div class="flex items-center mt-5">
+                    <svg class="h-6 mr-2 title-font" fill="currentColor" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489.536 489.536"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 489.536 489.536">
+                        <g>
+                            <g>
+                                <path
+                                    d="m488.554,476l-99-280.2c-1-4.2-5.2-7.3-9.4-7.3h-45.6c12.9-31.1 19.6-54.9 19.6-70.8 0-64.6-50-117.7-112.5-117.7-61.5,0-112.5,52.1-112.5,117.7 0,17.6 8.2,43.1 19.9,70.8h-39.7c-4.2,0-8.3,3.1-9.4,7.3l-99,280.2c-3.2,10.3 6.3,13.5 9.4,13.5h468.8c4.2,0.5 12.5-4.2 9.4-13.5zm-246.9-455.3c51,1.06581e-14 91.7,43.7 91.7,96.9 0,56.5-79.2,182.3-91.7,203.1-31.3-53.1-91.7-161.5-91.7-203.1 0-53.1 40.6-96.9 91.7-96.9zm-216.7,448l91.7-259.4h41.7c29.9,64.1 83.3,151 83.3,151s81.4-145.7 83.8-151h47.4l91.7,259.4h-439.6z">
+                                </path>
+                                <rect width="136.5" x="177.054" y="379.1" height="20.8"></rect>
+                                <path
+                                    d="m289.554,108.2c0-26-21.9-47.9-47.9-47.9s-47.9,21.9-47.9,47.9 20.8,47.9 47.9,47.9c27.1,0 47.9-21.8 47.9-47.9zm-75-1c0-14.6 11.5-27.1 27.1-27.1s27.1,12.5 27.1,27.1-11.5,27.1-27.1,27.1c-14.6,2.84217e-14-27.1-12.5-27.1-27.1z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="text-sm">Arquímedes 2630, Cordoba.</span>
+                </div>
+                <div class="flex items-center mt-5">
+                    <svg class="h-6 mr-2 title-font" fill="currentColor" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 60.002 60.002" style="enable-background:new 0 0 60.002 60.002;" xml:space="preserve">
+                        <g>
+                            <path d="M59.002,37.992c-3.69,0-6.693-3.003-6.693-6.693c0-0.553-0.447-1-1-1s-1,0.447-1,1c0,4.794,3.899,8.693,8.693,8.693
+            c0.553,0,1-0.447,1-1S59.554,37.992,59.002,37.992z">
+                            </path>
+                            <path d="M58.256,35.65c0.553,0,1-0.447,1-1s-0.447-1-1-1c-0.886,0-1.605-0.72-1.605-1.605c0-0.553-0.447-1-1-1s-1,0.447-1,1
+            C54.65,34.033,56.267,35.65,58.256,35.65z">
+                            </path>
+                            <path d="M20.002,2.992c3.691,0,6.693,3.003,6.693,6.693c0,0.553,0.448,1,1,1s1-0.447,1-1c0-4.794-3.9-8.693-8.693-8.693
+            c-0.552,0-1,0.447-1,1S19.449,2.992,20.002,2.992z">
+                            </path>
+                            <path d="M19.748,6.334c0,0.553,0.448,1,1,1c0.885,0,1.604,0.72,1.604,1.605c0,0.553,0.448,1,1,1s1-0.447,1-1
+            c0-1.988-1.617-3.605-3.604-3.605C20.196,5.334,19.748,5.781,19.748,6.334z">
+                            </path>
+                            <path d="M44.076,37.889c-1.276-0.728-2.597-0.958-3.721-0.646c-0.844,0.234-1.532,0.768-1.996,1.546
+            c-1.02,1.22-2.286,2.646-2.592,2.867c-2.367,1.604-4.25,1.415-6.294-0.629L17.987,29.542c-2.045-2.045-2.233-3.928-0.631-6.291
+            c0.224-0.31,1.65-1.575,2.87-2.596c0.778-0.464,1.312-1.152,1.546-1.996c0.311-1.123,0.082-2.444-0.652-3.731
+            c-0.173-0.296-4.291-7.27-8.085-9.277c-1.926-1.019-4.255-0.669-5.796,0.872L4.7,9.059c-4.014,4.014-5.467,8.563-4.321,13.52
+            c0.956,4.132,3.742,8.529,8.282,13.068l14.705,14.706c5.762,5.762,11.258,8.656,16.298,8.656c3.701,0,7.157-1.562,10.291-4.695
+            l2.537-2.537c1.541-1.541,1.892-3.87,0.872-5.796C51.356,42.186,44.383,38.069,44.076,37.889z M51.078,50.363L48.541,52.9
+            c-6.569,6.567-14.563,5.235-23.76-3.961L10.075,34.233c-4.271-4.271-6.877-8.344-7.747-12.104
+            c-0.995-4.301,0.244-8.112,3.786-11.655l2.537-2.537c0.567-0.566,1.313-0.862,2.07-0.862c0.467,0,0.939,0.112,1.376,0.344
+            c3.293,1.743,7.256,8.454,7.29,8.511c0.449,0.787,0.62,1.608,0.457,2.196c-0.1,0.36-0.324,0.634-0.684,0.836l-0.15,0.104
+            c-0.853,0.712-2.883,2.434-3.308,3.061c-0.612,0.904-1.018,1.792-1.231,2.665c-0.711-1.418-1.286-3.06-1.475-4.881
+            c-0.057-0.548-0.549-0.935-1.098-0.892c-0.549,0.058-0.949,0.549-0.892,1.099c0.722,6.953,6.129,11.479,6.359,11.668
+            c0.025,0.02,0.054,0.028,0.08,0.045l10.613,10.613c0.045,0.045,0.092,0.085,0.137,0.129c0.035,0.051,0.058,0.108,0.104,0.154
+            c0.189,0.187,4.704,4.567,11.599,5.283c0.035,0.003,0.07,0.005,0.104,0.005c0.506,0,0.94-0.383,0.994-0.896
+            c0.057-0.55-0.342-1.041-0.892-1.099c-2.114-0.219-3.987-0.839-5.548-1.558c0.765-0.23,1.543-0.612,2.332-1.146
+            c0.628-0.426,2.35-2.455,3.061-3.308l0.104-0.151c0.202-0.359,0.476-0.583,0.836-0.684c0.588-0.159,1.409,0.008,2.186,0.45
+            c0.067,0.04,6.778,4.003,8.521,7.296C52.202,48.062,51.994,49.447,51.078,50.363z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span class="text-sm">+93 749 99 65 50</span>
+                </div>
+                <div class="flex items-center mt-5">
+                    <svg class="h-6 mr-2 title-font" fill="currentColor" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 300.988 300.988" style="enable-background:new 0 0 300.988 300.988;"
+                        xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493
+                    S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001
+                    s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z">
+                                </path>
+                                <polygon
+                                    points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		">
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="text-sm">Lunes a Sábado</span>
+                   </div>
+                   <div class="flex items-center justify-between mt-5">
+                    <span class="inline-flex sm:mt-0 mt-4 justify-center sm:justify-start">
+                        <a href="https://www.facebook.com/" class="text-white hover:text-red-500 rounded mr-4">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" class="text-white hover:text-red-500 rounded">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+    
+            </div>
+            <form class="md:col-span-8 p-10" action="/enviar-correo" method="POST">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-first-name">
+                            Nombre
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            id="grid-first-name" type="text" placeholder="Nombre">
+                        
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-password">
+                            Tu Email
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-email" type="email" placeholder="********@*****.**">
+                    </div>
+                </div>
+    
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-password">
+                            Mensaje
+                        </label>
+                        <textarea rows="4"
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+                    </div>
+                    <div class="flex justify-between w-full px-3">
+                        <div class="md:flex md:items-center">
+                            <label class="block text-gray-500 font-bold">
+                                <input class="mr-2 leading-tight" type="checkbox">
+                                <span class="text-sm">
+                                    Recibir informacion
+                                </span>
+                            </label>
+                        </div>
+                        <button
+                            class=" button2 font-normal text-white"
+                            type="submit">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+    
+                </div>
+    
+            </form>
+    
+        </div>
+    </div>
+    
+    <div class="bg-black">
+        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="LOGO PNG.png" class="h-8" alt="Gym Logo">
+            
+          </a>
+          <p class="text-sm text-white sm:ml-6 sm:mt-0 mt-4">© Todos los derechos reservados. Diseñado por Estudio Osmov —
+            <a href="https://twitter.com/osmok_" rel="noopener noreferrer" class="text-white ml-1" target="_blank">@osmovestudio</a>
+          </p>
+          
+        </div>
+      </div>
+  </section>
+  <script src="javascript.js"></script>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
