@@ -10,45 +10,44 @@ document.getElementById('toggleButton').addEventListener('click', function() {
 function scrollToSection(sectionId) {
   var section = document.getElementById(sectionId);
   if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
-const carouselItems = document.querySelectorAll('.carousel-item');
-let currentIndex = 0;
+ScrollReveal().reveal('#hero', {
+  // Opciones de configuración
+  duration: 1000, // Duración de la animación en milisegundos
+  delay: 200, // Retraso antes de que se inicie la animación en milisegundos
+  distance: '20px', // Distancia desde la que se realiza la animación
+  origin: 'bottom', // Origen de la animación
+  easing: 'ease', // Tipo de interpolación de la animación
+  reset: true // Si la animación debe reiniciarse cada vez que se haga scroll
+});
 
-function showSlide(index) {
-  carouselItems.forEach((item, i) => {
-    if (i === index) {
-      item.classList.remove('hidden'); // Mostrar el slide actual
-    } else {
-      item.classList.add('hidden'); // Ocultar los demás slides
-    }
-  });
+const sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '20px',
+  duration: 1000,
+  delay: 300,
+  easing: 'cubic-bezier(0.5, 0, 0, 1)',
+});
+
+sr.reveal('#hero h1, #hero p, #hero button', {
+  interval: 200,
+  scale: 1,
+  origin: 'bottom',
+  distance: '20px',
+});
+
+
+function changeColor(card) {
+  card.style.backgroundColor = '#ad0e0e'; // Color de fondo invertido
+  card.style.color = '#ffffff'; // Color de texto invertido
+  
 }
 
-function nextSlide() {
-  currentIndex++;
-  if (currentIndex >= carouselItems.length) {
-    currentIndex = 0;
-  }
-  showSlide(currentIndex);
+// Función para restaurar los colores originales al quitar el mouse de la tarjeta
+function changeColorBack(card) {
+  card.style.backgroundColor = ''; // Restaurar el color de fondo original
+  card.style.color = ''; // Restaurar el color de texto original
 }
-
-function prevSlide() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = carouselItems.length - 1;
-  }
-  showSlide(currentIndex);
-}
-
-// Agregar event listeners para los botones de navegación
-document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
-document.querySelector('.carousel-next').addEventListener('click', nextSlide);
-
-// Mostrar el primer slide
-showSlide(currentIndex);
-
-// Desplazamiento automático
-setInterval(nextSlide, 5000); // Cambia el slide cada 5 segundos (5000 milisegundos)
