@@ -1250,18 +1250,36 @@ video {
 
 /* Clase personalizada para la imagen de fondo */
 
-.bg-custom {
-  background-image: url('/muscular-hombre-haciendo-levantamiento-pesas-gimnasio.jpg');
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  /* Fondo negro predeterminado */
-  color: white;
-  height: 100vh;
-  max-height: 1080px;
-  min-height: 720px;
+.fondo {
+  background: linear-gradient(270deg, #e04d30, #37e940, #6243ec, #df51b4, #ae44ec);
+  background-size: 200% 200%;
+  -webkit-animation: fondo 30s ease infinite;
+  -moz-animation: fondo 30s ease infinite;
+  -o-animation: fondo 30s ease infinite;
+  animation: fondo 30s ease infinite;
 }
+@-webkit-keyframes fondo {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes fondo {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes fondo {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes fondo {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
 
 /* BARRA SEPARADORA */
 
