@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page</title>
-        <link rel="icon" href="LOGOBLACK PNG.png">
+        <link rel="icon" href="dumbbell-svgrepo-com.svg">
     
         <!-- Importar Tailwind CSS -->
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -20,64 +20,64 @@
 <body>
     <section class="hero">
     
-        <nav class="bg-black shadow shadow-gray-300 w-full px-8 md:px-auto">
-    <div class="md:h-16 h-20 mx-auto md:px-4 container flex items-center justify-between">
-        <!-- Logo -->
-        <div class="text-white">
-            <!-- Heroicon - Chip Outline -->
-            <img src="LOGO PNG.png" alt="logo" class="h-8">
+      <nav class="bg-black shadow shadow-gray-300 w-full px-4 md:px-auto">
+        <div class="md:h-16 h-20 mx-auto md:px-4 container flex items-center justify-between">
+            <!-- Logo -->
+            <div class="text-white">
+                <!-- Heroicon - Chip Outline -->
+                <img src="LOGO PNG.png" alt="logo" class="h-8">
+            </div>
+            <!-- Contenedor de enlaces -->
+            <div class="hidden md:flex flex-grow justify-center space-x-4">
+                <ul class="text-white flex font-semibold">
+                  <li class="md:px-2 md:py-2 hover:text-red-500" onclick="scrollToSection('NOSOTROS')">Nosotros</li>
+                  <li class="md:px-2 md:py-2 hover:text-red-500" onclick="scrollToSection('ACTIVIDADES')">Actividades</li>
+                  <li class="md:px-2 md:py-2 hover:text-red-500" onclick="scrollToSection('HORARIOS')">Horarios</li>
+                  <li class="md:px-2 md:py-2 hover:text-red-500" onclick="scrollToSection('CONTACTO')">Contacto</li>
+                  <li class="md:px-2 md:py-2 hover:text-red-500" onclick="scrollToSection('PLANES')">Nuestros Planes</li>
+                </ul>
+            </div>
+            <!-- Iconos de redes sociales -->
+            <div class=" flex  justify-center  space-x-4">
+                <a href="https://www.facebook.com/" class="text-white hover:text-red-500 rounded">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" class="text-white hover:text-red-500 rounded">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+            </div>
+            <!-- Botón de hamburguesa (visible en mobile) -->
+            <div class="block md:hidden " id="toggleButton">
+                <button class="text-white hover:bg-red-500 rounded focus:outline-none">
+                    <svg class="h-10 w-10 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M4 6h16a1 1 0 010 2H4a1 1 0 110-2zm0 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 5h16a1 1 0 010 2H4a1 1 0 110-2z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
         </div>
-        <!-- Contenedor de enlaces -->
-        <div class="hidden md:flex flex-grow justify-center">
-            <ul class="text-white flex font-semibold">
-              <li class="md:px-4 md:py-2 hover:text-red-500" onclick="scrollToSection('NOSOTROS')">Nosotros</li>
-              <li class="md:px-4 md:py-2 hover:text-red-500" onclick="scrollToSection('ACTIVIDADES')">Actividades</li>
-              <li class="md:px-4 md:py-2 hover:text-red-500" onclick="scrollToSection('HORARIOS')">Horarios</li>
-              <li class="md:px-4 md:py-2 hover:text-red-500" onclick="scrollToSection('CONTACTO')">Contacto</li>
-              <li class="md:px-4 md:py-2 hover:text-red-500" onclick="scrollToSection('PLANES')">Nuestros Planes</li>
-            </ul>
-          </div>
-
-          <div class="hidden sm:flex justify-center mt-4">
-            <a href="https://www.facebook.com/" class="text-white hover:text-red-500 rounded mr-4">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-            </a>
-            <a href="https://www.instagram.com/" class="text-white hover:text-red-500 rounded">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-            </a>
-        </div>
-        <!-- Botón de hamburguesa (visible en mobile) -->
-        <div class="block md:hidden " id="toggleButton">
-            <button class="text-white hover:bg-red-500 rounded  focus:outline-none">
-                <svg class="h-10 w-10 fill-current" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                        d="M4 6h16a1 1 0 010 2H4a1 1 0 110-2zm0 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 5h16a1 1 0 010 2H4a1 1 0 110-2z"
-                        clip-rule="evenodd" />
-                </svg>
-            </button>
-        </div>
-    </div>
-</nav>
-        <!-- Menú colapsable -->
-        <div class="md:hidden bg-red-500" id="menuColapsable">
-            <ul class="text-white flex flex-row justify-center">
-                <li class="py-2 px-4 border-b" class="block" onclick="smoothScroll('NOSOTROS')">Nosotros</li>
-                <li class="py-2 px-4 border-b" class="block"onclick="scrollToSection('ACTIVIDADES')">Actividades</li>
-                <li class="py-2 px-4 border-b" class="block"onclick="scrollToSection('HORARIOS')">Horarios</li>
-                <li class="py-2 px-4 border-b" class="block"onclick="scrollToSection('CONTACTO')">Contacto</li>
-                <li class="py-2 px-4 border-b" onclick="scrollToSection('PLANES')">Nuestros Planes</li>
-            </ul>
-        </div>
-        </section>
+    </nav>
+    <!-- Menú colapsable -->
+    <div class="md:hidden bg-gradient-to-r from-red-500 to-pink-700" id="menuColapsable">
+      <ul class="text-white flex flex-col  justify-left items-left space-y-4">
+          <li class="py-2 px-4 " onclick="scrollToSection('NOSOTROS')">Nosotros</li>
+          <li class="py-2 px-4" onclick="scrollToSection('ACTIVIDADES')">Actividades</li>
+          <li class="py-2 px-4" onclick="scrollToSection('HORARIOS')">Horarios</li>
+          <li class="py-2 px-4" onclick="scrollToSection('CONTACTO')">Contacto</li>
+          <li class="py-2 px-4" onclick="scrollToSection('PLANES')">Nuestros Planes</li>
+      </ul>
+       </div>
+    </section>
 
          <section id="hero" class="py-80 bg-cover bg-top bg-no-repeat bg-slate-900 bg-blend-multiply hero" style="background-image: url(handsome-shirtless-man-with-stylish-hair-muscular-ectomorph-body-doing-exercises-with-dumbbells-dark-textured-background.jpg); background-color: rgb(91, 92, 104); background-blend-mode: multiply;" data-sr>
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">ENTRENA DURO <span class=" text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-500">VIVE MAS FUERTE</span></h1>
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">ENTRENA DURO <span class=" text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-pink-700">VIVE MAS FUERTE</span></h1>
                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48 ">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
                 <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 ">
                     <button class="transition duration-150 ease-in-out inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-white dark:focus:ring-blue-900" onclick="scrollToSection('NOSOTROS')">
@@ -91,18 +91,18 @@
         </section>
 
         <section id="hero" class="flex justify-center items-center">
-          <div class="w-full bg-gradient-to-r from-red-500 to-red-700 flex justify-center items-center">
+          <div class="w-full bg-gradient-to-r from-red-500 to-pink-700 flex justify-center items-center">
             <div class="container mx-auto grid gap-4 lg:gap-8 lg:grid-cols-3">
               <div class="p-4 flex flex-col items-center justify-center">
-                <img src="musculo.png" alt="Icono" class="w-16 h-16 mb-2 text-white">
+                <img src="musculo.svg" alt="Icono" class="w-16 h-16 mb-2 ">
                 <span class="text-white text-center text-lg lg:text-2xl font-medium">MANTENTE FUERTE</span>
               </div>
               <div class="p-4 flex flex-col items-center justify-center">
-                <img src="pesa.png" alt="Icono" class="w-16 h-16 mb-2 text-white">
+                <img src="pesa.svg" alt="Icono" class="w-16 h-16 mb-2 ">
                 <span class="text-white text-center text-lg lg:text-2xl font-medium">ENTRENA DURO</span>
               </div>
               <div class="p-4 flex flex-col items-center justify-center">
-                <img src="objetivo.png" alt="Icono" class="w-16 h-16 mb-2 text-white">
+                <img src="objetivo.svg" alt="Icono" class="w-16 h-16 mb-2 ">
                 <span class="text-white text-center text-lg lg:text-2xl font-medium">CUMPLE TUS OBJETIVOS</span>
               </div>
             </div>
@@ -110,7 +110,7 @@
         </section>
         
 
-        <section id="hero" class=" fondo flex flex-col lg:flex-row" style="background-image: url(dark-concrete-texture-background.jpg);  background-color: rgb(59, 59, 59); background-blend-mode: multiply;">
+        <section id="hero" class=" fondo flex flex-col lg:flex-row" style="background-image: url(Pattern.jpg);  background-color: rgb(77, 75, 75); background-blend-mode: multiply;">
           <div class="container md:w-1/2 ">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
               <!-- Carousel wrapper -->
@@ -242,11 +242,11 @@
 
    
     </section>
-    <section id="hero" class="fondo bg-cover text-white-600 body-font" style="background-image: url(dark-concrete-texture-background.jpg);  background-color: rgb(59, 59, 59); background-blend-mode: multiply;">
+    <section id="hero" class="fondo bg-cover text-white-600 body-font" style="background-image: url(Pattern.jpg);  background-color: rgb(90, 90, 90); background-blend-mode: multiply;">
         <div id="ACTIVIDADES" class="container px-5 py-16 mx-auto">
             <div class="text-center w-full mb-10">
               <h2 class="text-3xl text-gray-50  font-medium  mb-4">Explora</h2>
-              <h1 class=" text-6xl font-bold title-font mb-4 text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-500">NUESTRAS ACTIVIDADES</h1>
+              <h1 class=" text-6xl font-bold title-font mb-4 text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-pink-700">NUESTRAS ACTIVIDADES</h1>
             </div>
             <div class="sm:grid-cols-2 md:flex flex-row lg:flex">
                 <div class=" transform  flex-1 md:w-1/2 p-4  transition duration-300 hover:scale-105  ">
@@ -283,7 +283,7 @@
   <section id="hero" class="text-gray-600 body-font ">
     <div id="HORARIOS" class="container px-5 py-24 mx-auto ">
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class=" text-6xl font-bold title-font mb-4 text-gray-900">NUESTROS <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-500">HORARIOS</span></h1>
+          <h1 class=" text-6xl font-bold title-font mb-4 text-gray-900">NUESTROS <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-pink-700">HORARIOS</span></h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Descubre todas nuestras actividades que tenemos para ofrecerte.</p>
         </div>
         <div class=" overflow-x-auto">
@@ -353,7 +353,7 @@
     </div>
   </section>
 
-  <section id="hero" class="fondo text-white py-20" style="background-image: url(dark-concrete-texture-background.jpg);  background-color: rgb(59, 59, 59); background-blend-mode: multiply;">
+  <section id="hero" class="fondo text-white py-20" style="background-image:  url(Pattern.jpg);  background-color: rgb(90, 90, 90); background-blend-mode: multiply;">
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-semibold mb-10">¿Que opinan de nosotros?</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -389,7 +389,7 @@
 
   <section id="hero" class="bg-white">
     <div id="PLANES" class="py-16 flex flex-col text-center w-full ">
-      <h1 class=" text-6xl font-bold title-font mb-4 text-gray-900">NUESTROS <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-500">PLANES</span></h1>
+      <h1 class=" text-6xl font-bold title-font mb-4 text-gray-900">NUESTROS <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-500 from-pink-700">PLANES</span></h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Descubre todas nuestras actividades que tenemos para ofrecerte.</p>
     </div>
     <div class="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-7xl">
@@ -507,13 +507,13 @@
   </section>
   
 
-  <section id="hero" class="fondo bg-cover" style="background-image: url(dark-concrete-texture-background.jpg);  background-color:rgb(59, 59, 59); background-blend-mode: multiply;">
+  <section id="hero" class="fondo bg-cover" style="background-image: url(Pattern.jpg);  background-color: rgb(90, 90, 90); background-blend-mode: multiply;">
     <div id="CONTACTO" class="flex-row container  max-w-screen-xs mx-auto p-2">
         <div class="lg:flex flex-row  md:grid-cols-12 ">
             <div class="xl:flex-row md:col-span-4 p-10 text-white">
                
                 <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
-                    ¡Es ahora! Ponte en <span class= " text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-500">Contacto</span>
+                    ¡Es ahora! Ponte en <span class= " text-transparent bg-clip-text bg-gradient-to-r to-red-500 from-pink-700">Contacto</span>
                 </h3>
                 <p class="mt-4 leading-7 text-gray-200">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
