@@ -1,19 +1,18 @@
 # FULLGYM
 
-Nombre del Proyecto
-Proyecto creado para portfolio de una landing page para un gimnasio
+Project created for a gym landing page portfolio.
 
 Demo
-Proximamente
+https://fulltraingym.netlify.app/
 
-Tecnologías utilizadas
+Technologies Used
 
 HTML5
 CSS3 (Tailwind CSS)
 JavaScript (Node.js, Express.js)
 
-Créditos
+Credits
 @estudioosmov
 
-Licencia
-Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE.md para más detalles.
+License
+This project is licensed under the MIT License - see the LICENSE.md file for more details.
